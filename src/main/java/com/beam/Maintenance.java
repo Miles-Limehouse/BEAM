@@ -1,7 +1,5 @@
 package com.beam;
 
-
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,8 +15,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
-
-
 
 public class Maintenance extends JFrame {
     public JTable table1;

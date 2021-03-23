@@ -41,16 +41,9 @@ public class App extends JFrame {
     private JPanel mainPanel;
     public static JFrame maint=null;
 
-
-
-
-
     public static void main(String[] args) {
         App mainApp = new App();
          maint = new Maintenance();
-
-
-
     }
     //constructor
     public App(){
@@ -97,11 +90,6 @@ public class App extends JFrame {
         });
 
     }
-
-
-
-
-
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
