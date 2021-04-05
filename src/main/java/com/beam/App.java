@@ -35,9 +35,6 @@ public class App extends JFrame {
     public static void main(String[] args) {
         App mainApp = new App();
          maint = new Maintenance();
-
-
-
     }
     //constructor
     public App(){
@@ -63,7 +60,7 @@ public class App extends JFrame {
         maintenanceButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                maint.setVisible(true);
+                    maint.setVisible(true);
             }
         });
         //Set action for "Search" button

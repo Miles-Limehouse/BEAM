@@ -6,6 +6,7 @@ import org.json.simple.JSONValue;
 import javax.swing.*;
 import java.io.*;
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class MaintUtils {
@@ -86,8 +87,13 @@ public class MaintUtils {
         try {
             Scanner scan = new Scanner(new File(getIndexFilePath()), "UTF8");
             String versionVar= scan.nextLine();
-            nextAvailID = Integer.parseInt(scan.nextLine()) ;
-            //scan.nextLine();
+            try {
+                nextAvailID = Integer.parseInt(scan.nextLine());
+                //scan.nextLine();
+            }
+            catch (NoSuchElementException e){
+                //Test
+            }
 
             while(scan.hasNext()){
                 if(scan.hasNextBoolean()){
